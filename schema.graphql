@@ -1,0 +1,15 @@
+type Query{
+    getUser(id: String!): String
+}
+
+type Mutation{
+    register(input: RegisterInput!): String
+}
+
+input RegisterInput {
+    id: String
+    firstName: String
+    lastName: String
+    email: String
+    password: String
+}
